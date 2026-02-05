@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Local AI Document Chat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- ================= LEFT SIDEBAR ================= -->
+
+  <aside class="sidebar">
+
+    <h2>📄 Documents</h2>
+
+    <div class="upload-box" id="dropZone">
+      <input type="file" id="fileInput" multiple hidden>
+      <button onclick="pickFiles()">Upload Files</button>
+      <p>Drag & drop files here</p>
+      <div id="uploadStatus"></div>
+    </div>
+
+    <div class="file-panel">
+      <h3>Loaded Files</h3>
+      <ul id="fileList"></ul>
+    </div>
+
+  </aside>
+
+
+  <!-- ================= RIGHT CHAT ================= -->
+
+  <main class="chat-area">
+
+    <header class="chat-header">
+      <h1>Local AI Document Chat</h1>
+      <span>Answers only from uploaded files</span>
+    </header>
+
+    <div id="chatWindow"></div>
+
+    <div class="input-row">
+      <input id="msgInput"
+             placeholder="Ask about uploaded documents..."
+             autocomplete="off">
+      <button onclick="send()">Send</button>
+    </div>
+
+  </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
