@@ -86,7 +86,7 @@ pip install loguru
 
 ------------------------------------------------------------------------------------------------------------
 
-#To Run
+# To Run
 ```
 1. Clone repo to your local machine.
     "in bash"
