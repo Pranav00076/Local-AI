@@ -87,7 +87,7 @@ pip install loguru
 ------------------------------------------------------------------------------------------------------------
 
 #To Run
-
+```
 1. Clone repo to your local machine.
     "in bash"
      git clone <your-repo-url>
@@ -116,7 +116,7 @@ pip install loguru
    frontend/index.html
 
 7. Upload documents from the left sidebar and start chatting.
-   
+   ```
 ------------------------------------------------------------------------------------------------------------
 
 # How It Works
@@ -131,7 +131,7 @@ pip install loguru
 ------------------------------------------------------------------------------------------------------------
 
 # Troubleshooting
-
+```
 1. Ollama connection error
     Start Ollama: "ollama serve"
 
@@ -148,7 +148,7 @@ Rebuild index
 rm -rf storage/*
 
 Restart backend : (control + c) then "uvicorn backend.main:app --reload" .
-
+```
 ------------------------------------------------------------------------------------------------------------
 # License
 
